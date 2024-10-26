@@ -1,0 +1,143 @@
+.pageone {
+  background-image: url(../../assets/pink_sperm.png),
+    url(../../assets/Layer7.png), url(../../assets/Layer4copy.png),
+    url(../../assets/Layer4copy2.png), url(../../assets/bg.png);
+  background-position: top 600px left, top 72px left, bottom 60px left 350px,
+    top 30px right 50px, -47px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto, auto, cover;
+  width: 100vw;
+  min-width: 1024px;
+  min-height: 768px;
+  position: relative;
+  overflow: hidden;
+}
+
+.virus__img {
+  position: absolute;
+}
+
+.virus-1 {
+  left: 744px;
+  top: 61px;
+  animation: virusAnimation 3s linear infinite alternate;
+}
+
+.virus-2 {
+  left: 861px;
+  top: 200px;
+  animation: virusAnimation 3s -1s linear infinite alternate;
+}
+
+.virus-3 {
+  left: 22px;
+  top: 503px;
+  animation: virusAnimation 3s -1.5s linear infinite alternate;
+}
+
+.virus-4 {
+  bottom: 0;
+  left: 542px;
+  animation: virusAnimation-2 5s linear infinite alternate;
+}
+
+.pageone-wrapper {
+  width: min-content;
+  margin-top: 161px;
+  margin-left: 70px;
+  display: grid;
+  grid-template-columns: 510px 289px;
+  grid-template-rows: repeat(2, min-content);
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.pageone_spem {
+  position: absolute;
+  right: -19%;
+  top: -6px;
+}
+
+.pageone__title {
+  margin: 0;
+  width: 910px;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 109px;
+  line-height: 117px;
+  text-transform: uppercase;
+}
+
+.pageone__title-span_thin {
+  font-family: Din pro;
+  font-size: 27px;
+  text-transform: uppercase;
+  letter-spacing: 1.62px;
+  margin-bottom: 16px;
+}
+
+.pageone__title-span_bold {
+  font-weight: 900;
+}
+
+.pageone__button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 0 9px 20px;
+  border: none;
+  border-radius: 80px;
+  width: 289px;
+  font-size: 27px;
+  font-family: DIN Pro;
+  background-color: #ff6a9f;
+  align-self: flex-end;
+  margin-left: 47px;
+  margin-bottom: 17px;
+}
+
+.pageone__button_arrow-container {
+  /* background-color: #000; */
+  background-image: url(../../assets/more-btn.png);
+  background-size: contain;
+  background-size: 60px 60px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: relative;
+}
+
+.pageone__button_arrow-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 7.5px solid transparent;
+  border-radius: 100%;
+}
+
+.pageone__button_arrow {
+  width: 20px;
+  height: 14px;
+}
+
+.pageone__button_text {
+  font-family: Din pro;
+  margin: 0;
+  letter-spacing: 0.81px;
+}
+
+@keyframes virusAnimation {
+  to {
+    transform: scale(0.9) translate(20%, -15%);
+  }
+}
+
+@keyframes virusAnimation-2 {
+  to {
+    transform: scale(1.1) translate(5%, 15px) rotate(5deg);
+  }
+}

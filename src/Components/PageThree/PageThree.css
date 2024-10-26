@@ -1,0 +1,203 @@
+.pagethree {
+  min-width: 1024px;
+  min-height: 768px;
+  background: url(../../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -2102px;
+  position: relative;
+}
+
+.bottle {
+  position: absolute;
+  bottom: 0;
+  left: 52px;
+  z-index: 4;
+}
+
+.bubble {
+  position: absolute;
+}
+
+.bubble-1 {
+  left: 77px;
+  top: 212px;
+  z-index: 2;
+  animation: bubble-floating 3s linear infinite alternate;
+}
+.bubble-2 {
+  position: absolute;
+  left: 186px;
+  top: 317px;
+  z-index: 3;
+  animation: bubble-floating 5s linear infinite alternate;
+}
+.bubble-3 {
+  position: absolute;
+  left: 197px;
+  top: 65px;
+  z-index: 2;
+  animation: bubble-floating-2 3s linear infinite alternate;
+}
+.bubble-4 {
+  position: absolute;
+  left: 242px;
+  top: 591px;
+  z-index: 2;
+  animation: bubble-floating-2 3s linear infinite alternate;
+}
+.bubble-5 {
+  position: absolute;
+  left: 184px;
+  top: 155px;
+  z-index: 4;
+  animation: bubble-floating-2 3s linear infinite alternate;
+}
+
+.bubble-6 {
+  bottom: 0;
+  transform: translateX(130%);
+  z-index: 4;
+}
+
+.bubble-7 {
+  position: absolute;
+  left: 10px;
+  top: 453px;
+  z-index: 4;
+  animation: bubble-floating 3s -1s linear infinite alternate;
+}
+
+.bubble-8 {
+  position: absolute;
+  left: 25px;
+  top: 553px;
+  z-index: 4;
+  animation: bubble-floating 3s linear infinite alternate;
+}
+
+.pagethree__content {
+  margin-top: 169px;
+}
+
+.pagethree__title {
+  font-family: Din pro;
+  font-size: 27px;
+  font-weight: 100px;
+  letter-spacing: 1.67px;
+  text-transform: uppercase;
+  margin-left: 353px;
+  margin-bottom: 26px;
+}
+
+.pagethree__brand {
+  font-family: Gilroy;
+  font-size: 95px;
+  line-height: 73px;
+  letter-spacing: 10.45px;
+  margin: 0 0 0 348px;
+}
+.pagethree__brand span {
+  font-weight: 900;
+  color: #242424;
+}
+
+.pagethree__grid {
+  position: relative;
+  display: grid;
+  height: 265px;
+  grid-template-columns: 413px 263px;
+  grid-template-areas:
+    "card1 card2"
+    "card1 button";
+  row-gap: 36px;
+  column-gap: 41px;
+  margin-left: 227px;
+  margin-top: 92px;
+  z-index: 2;
+}
+
+.grid__icon {
+  z-index: 1;
+  transform: translate(188%, -50%);
+}
+
+.grid__icon-1 {
+  grid-area: card2;
+  transform: translate(58%, -50%);
+}
+
+.grid__icon-2 {
+  grid-area: card1;
+}
+
+.grid__cellone {
+  background-color: #fcfdfd;
+  width: fit-content;
+  grid-area: card1;
+  padding: 53px 49px 74px 125px;
+  font-family: Din pro;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2e2e2e;
+  box-shadow: 2.723px 4.193px 116.25px 8.75px rgba(157, 185, 198, 0.39);
+  border-radius: 40px;
+}
+
+.grid__celltwo {
+  background-color: #fcfdfd;
+  width: fit-content;
+  padding: 53px 87px 49px 42px;
+  font-family: Din pro;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2e2e2e;
+  box-shadow: 2.723px 4.193px 116.25px 8.75px rgba(157, 185, 198, 0.39);
+  border-radius: 40px;
+  grid-area: card2;
+}
+
+.grid__button {
+  background-color: #ff6a9f;
+  border-radius: 80px;
+  grid-area: button;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 33px 7px 20px;
+  gap: 18px;
+}
+
+.grid__plus-button {
+  background-image: url(../../assets/plus-button.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  background-position: center center;
+  color: #fff;
+  vertical-align: middle;
+  font-family: Gilroy;
+  font-size: 30px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button__text {
+  font-family: Din pro;
+  font-size: 27px;
+  letter-spacing: 0.81px;
+  margin: 0;
+}
+
+@keyframes bubble-floating {
+  to {
+    transform: scale(0.8) translate(30%, 20%);
+  }
+}
+
+@keyframes bubble-floating-2 {
+  to {
+    transform: scale(0.8) translate(-5%, 20%);
+  }
+}

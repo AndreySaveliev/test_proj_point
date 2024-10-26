@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(./Gilroy-Light.ttf) format("TrueType"),
+    url(./Gilroy-Light.woff) format("woff");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(./Gilroy-ExtraBold.ttf) format("TrueType"),
+    url(./Gilroy-ExtraBold.woff) format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Din Pro;
+  src: url(./dinpro.otf) format("OpenType");
+  font-weight: 400;
+}

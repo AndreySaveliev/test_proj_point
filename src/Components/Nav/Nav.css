@@ -1,0 +1,21 @@
+.nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 26px - 16px);
+  margin-top: 26px;
+  margin-left: 70px;
+  margin-bottom: 16px;
+  z-index: 10;
+  width: 0;
+}
+
+.nav__img {
+  width: 132px;
+}
+
+.nav__comp {
+  width: 50px;
+  justify-self: flex-end;
+}
