@@ -6,7 +6,7 @@
 
 ---
 
-## Сcылка на деплой на [Vercel]('')
+## Сcылка на деплой на [Vercel](https://test-proj-point.vercel.app/)
 
 ---
 
